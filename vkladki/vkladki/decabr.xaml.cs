@@ -28,11 +28,9 @@ namespace vkladki
    new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
    }
             };
-            Label nimetus = new Label { Text = "Маквин", FontSize = 30 };
+            Label nimetus = new Label { Text = "Маквин", FontSize = 100};
             Image img = new Image { Source = "makvin.jpg" };
-            Label kirjeldus = new Label { Text = "САМАЯ БЫСТРАЯ," +
-                " САМАЯ КЛАССНАЯ," +
-                " САМАЧ КРАСИВАЯ" };
+            Label kirjeldus = new Label { Text = "Интерьер MAKVIN достаточно изворотливый, и, хотя у него есть некоторые распределительные устройства с другими продуктами МОЛНИЯ, большинство переключателей и циферблатов будут казаться чуждым тем, кто не знаком с брендом. Это хорошо в разреженном секторе, в котором находится MAKVIN, и даже перед тем, как вы войдете внутрь, диэдронные спин-спиральные двери наиболее подходят для вас." };
             var tap = new TapGestureRecognizer();
             tap.Tapped += async (s, e) =>
             {
