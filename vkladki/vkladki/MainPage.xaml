@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:vkladki;assembly=vkladki"
+            x:Class="vkladki.MainPage">
+
+    <TabbedPage.Children>
+        <local:decabr />
+        <local:Janvar />
+        <local:Fevral />
+        <local:mart/>
+        <local:aprel/>
+        <local:maj/>
+        <local:ijun/>
+        <local:ijul/>
+        <local:avgust/>
+        <local:sentabr/>
+        <local:oktabr/>
+        <local:nojabr/>
+
+
+    </TabbedPage.Children>
+
+    </TabbedPage>
