@@ -39,6 +39,7 @@
     </EmbeddedResource>
     <EmbeddedResource Update="maj.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Update="mart.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

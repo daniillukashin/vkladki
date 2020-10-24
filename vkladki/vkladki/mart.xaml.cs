@@ -28,14 +28,14 @@ namespace vkladki
    new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
    }
             };
-            Label nimetus = new Label { Text = "puk", FontSize = 30 };
+            Label nimetus = new Label { Text = "Чико", FontSize = 100 };
             Image img = new Image { Source = "makvin.jpg" };
-            Label kirjeldus = new Label { Text = "privet" };
+            Label kirjeldus = new Label { Text = "Чтобы наилучшим образом использовать дополнительное заднее пространство для ног, Гром разработала факультативные электронные опоры в стиле авиалиний, легко интегрированные в основания двух задних сидений. Они расширяются и поворачиваются, обеспечивая выбор между вертикальными, расслабленными и откинутыми местами для сидения." };
             var tap = new TapGestureRecognizer();
             tap.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Информация", "КЧАУ", "Закрыть");
+                await DisplayAlert("Цена", "V8 - 236 895,49 евро; Speed - 260 287,52 евро ; EWB - 280 206,69 евро ", "Закрыть");
             };
             img.GestureRecognizers.Add(tap);
             grd.Children.Add(nimetus, 0, 0);

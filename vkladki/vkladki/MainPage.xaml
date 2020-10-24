@@ -5,9 +5,9 @@
             x:Class="vkladki.MainPage">
 
     <TabbedPage.Children>
-        <local:decabr />
-        <local:Janvar />
-        <local:Fevral />
+        <local:decabr/>
+        <local:Janvar/>
+        <local:Fevral/>
         <local:mart/>
         <local:aprel/>
         <local:maj/>
@@ -17,6 +17,7 @@
         <local:sentabr/>
         <local:oktabr/>
         <local:nojabr/>
+        
 
 
     </TabbedPage.Children>

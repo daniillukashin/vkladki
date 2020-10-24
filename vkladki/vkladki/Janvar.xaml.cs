@@ -28,17 +28,17 @@ namespace vkladki
    new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
    }
                 };
-                Label nimetus = new Label { Text = "Не", FontSize = 30 };
+                Label nimetus = new Label { Text = "Док Хадсон", FontSize = 100 };
                 Image img = new Image { Source = "makvin.jpg" };
                 Label kirjeldus = new Label
                 {
-                    Text = "privet"
+                    Text = "Современный, стильный и красиво оформленный интерьер Дока. В Доке каждый компонент был тщательно разработан для обеспечения утонченного тактильного опыта. Кабина оборачивается вокруг водителя, а селектор передач SportShift находится у вас под рукой. Ультратонкое зеркало заднего вида имеет бескаркасную конструкцию."
                 };
                 var tap = new TapGestureRecognizer();
                 tap.Tapped += async (s, e) =>
                 {
                     img = (Image)s;
-                    await DisplayAlert("Информация", "КЧАУ", "Закрыть");
+                    await DisplayAlert("Информация", "Цена начинается от 27000 евро в минимальной комплектации", "Закрыть");
                 };
                 img.GestureRecognizers.Add(tap);
                 grd.Children.Add(nimetus, 0, 0);

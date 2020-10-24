@@ -28,14 +28,14 @@ namespace vkladki
    new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
    }
             };
-            Label nimetus = new Label { Text = "puk", FontSize = 30 };
+            Label nimetus = new Label { Text = "Филмор", FontSize = 100 };
             Image img = new Image { Source = "makvin.jpg" };
-            Label kirjeldus = new Label { Text = "privet" };
+            Label kirjeldus = new Label { Text = "В интерьере особых изменений «Фил» не обещает, но обещает более качественные материалы. Ясно, что это будет зависить от ценника на автомобиль. «Фил» нацелен при создании Филмор 0.5 на увеличение внутреннего пространства автомобиля. В салоне Филмор мы видим новые сидения и декоративные элементы, которые окрашены в цвет кузова автомобиля." };
             var tap = new TapGestureRecognizer();
             tap.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Информация", "КЧАУ", "Закрыть");
+                await DisplayAlert("Цена", "Цена а новый кроссовер Филмар будет варьироваться от 70000 до 8000 евро.", "Закрыть");
             };
             img.GestureRecognizers.Add(tap);
             grd.Children.Add(nimetus, 0, 0);
