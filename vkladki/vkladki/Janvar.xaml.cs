@@ -38,7 +38,7 @@ namespace vkladki
                 tap.Tapped += async (s, e) =>
                 {
                     img = (Image)s;
-                    await DisplayAlert("Информация", "Цена начинается от 27000 евро в минимальной комплектации", "Закрыть");
+                    await DisplayAlert("Цена", "Цена начинается от 27000 евро в минимальной комплектации", "Закрыть");
                 };
                 img.GestureRecognizers.Add(tap);
                 grd.Children.Add(nimetus, 0, 0);

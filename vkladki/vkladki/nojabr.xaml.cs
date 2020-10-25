@@ -28,14 +28,14 @@ namespace vkladki
    new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
    }
             };
-            Label nimetus = new Label { Text = "puk", FontSize = 30 };
+            Label nimetus = new Label { Text = "Винтец", FontSize = 100 };
             Image img = new Image { Source = "makvin.jpg" };
-            Label kirjeldus = new Label { Text = "privet" };
+            Label kirjeldus = new Label { Text = "В салоне появилась новая мультимедийная система с 8,4-дюймовым дисплеем, размещенная вертикально как у Теслы. Он реагирует на жесты голос. С данного дисплея производиться регулирование всех функций суперкара. Отделка интерьера представляется собой качественную ткань и алькантару. С помощью 8,4-дюймового экрана возможно настроить освещение интерьера суперкара в зависимости от манеры езды. Также возможно вывести на экран две камеры, установленные снаружи." };
             var tap = new TapGestureRecognizer();
             tap.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Информация", "КЧАУ", "Закрыть");
+                await DisplayAlert("Цена", "Цена на обновленный суперкар Винтец составит 193 551,10 евро.", "Закрыть");
             };
             img.GestureRecognizers.Add(tap);
             grd.Children.Add(nimetus, 0, 0);

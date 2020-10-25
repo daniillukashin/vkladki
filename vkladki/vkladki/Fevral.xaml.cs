@@ -35,7 +35,7 @@ namespace vkladki
             tap.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Информация", "базовая комплектация Comfort MT стартует от 9000 евро; средняя комплектация Luxury MT от 9500 евро; максимальный вариант Luxury CVT от 10000 евро.", "Закрыть");
+                await DisplayAlert("Цена", "Базовая комплектация Comfort MT стартует от 9000 евро; средняя комплектация Luxury MT от 9500 евро; максимальный вариант Luxury CVT от 10000 евро.", "Закрыть");
             };
             img.GestureRecognizers.Add(tap);
             grd.Children.Add(nimetus, 0, 0);
