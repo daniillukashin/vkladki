@@ -29,7 +29,7 @@ namespace vkladki
    }
                 };
                 Label nimetus = new Label { Text = "Док Хадсон", FontSize = 100 };
-                Image img = new Image { Source = "makvin.jpg" };
+                Image img = new Image { Source = "dok.jpg" };
                 Label kirjeldus = new Label
                 {
                     Text = "Современный, стильный и красиво оформленный интерьер Дока. В Доке каждый компонент был тщательно разработан для обеспечения утонченного тактильного опыта. Кабина оборачивается вокруг водителя, а селектор передач SportShift находится у вас под рукой. Ультратонкое зеркало заднего вида имеет бескаркасную конструкцию."
@@ -39,6 +39,7 @@ namespace vkladki
                 {
                     img = (Image)s;
                     await DisplayAlert("Цена", "Цена начинается от 27000 евро в минимальной комплектации", "Закрыть");
+                    img.Opacity = 0;
                 };
                 img.GestureRecognizers.Add(tap);
                 grd.Children.Add(nimetus, 0, 0);

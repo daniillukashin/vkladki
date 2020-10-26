@@ -29,13 +29,14 @@ namespace vkladki
    }
             };
             Label nimetus = new Label { Text = "Фло", FontSize = 100 };
-            Image img = new Image { Source = "makvin.jpg" };
+            Image img = new Image { Source = "flo.webp" };
             Label kirjeldus = new Label { Text = "Новый интерьер Фло основывается на изысканности и утонченности, которые стали синонимом ЛО, возглавляя сегмент с лучшим в своем классе передним столом и местом для ног, предоставляя больше свободного пространства как для водителя, так и для пассажиров." };
             var tap = new TapGestureRecognizer();
             tap.Tapped += async (s, e) =>
             {
                 img = (Image)s;
                 await DisplayAlert("Цена", "Цена на пикап нового поколения Фло составит 18 105,32 евро.", "Закрыть");
+                img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap);
             grd.Children.Add(nimetus, 0, 0);

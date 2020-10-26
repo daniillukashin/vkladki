@@ -29,13 +29,14 @@ namespace vkladki
    }
             };
             Label nimetus = new Label { Text = "Чико", FontSize = 100 };
-            Image img = new Image { Source = "makvin.jpg" };
+            Image img = new Image { Source = "tiko.jpg" };
             Label kirjeldus = new Label { Text = "Чтобы наилучшим образом использовать дополнительное заднее пространство для ног, Гром разработала факультативные электронные опоры в стиле авиалиний, легко интегрированные в основания двух задних сидений. Они расширяются и поворачиваются, обеспечивая выбор между вертикальными, расслабленными и откинутыми местами для сидения." };
             var tap = new TapGestureRecognizer();
             tap.Tapped += async (s, e) =>
             {
                 img = (Image)s;
                 await DisplayAlert("Цена", "V8 - 236 895,49 евро; Speed - 260 287,52 евро ; EWB - 280 206,69 евро ", "Закрыть");
+                img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap);
             grd.Children.Add(nimetus, 0, 0);

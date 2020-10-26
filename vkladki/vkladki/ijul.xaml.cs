@@ -29,13 +29,14 @@ namespace vkladki
    }
             };
             Label nimetus = new Label { Text = "Кинг", FontSize = 100 };
-            Image img = new Image { Source = "makvin.jpg" };
+            Image img = new Image { Source = "king.jpg" };
             Label kirjeldus = new Label { Text = "Интерьер нового Кинга тоже получил множество изменений. Была установлена новая передняя панель, которая была выполнена из более качественных материалов. Она стала более современной и стильной." };
             var tap = new TapGestureRecognizer();
             tap.Tapped += async (s, e) =>
             {
                 img = (Image)s;
                 await DisplayAlert("Цена", "Цена на новый внедорожник 2 поколения Кинг будет начинаться от 8 427,77 евро.", "Закрыть");
+                img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap);
             grd.Children.Add(nimetus, 0, 0);

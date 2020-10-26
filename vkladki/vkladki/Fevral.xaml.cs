@@ -29,13 +29,14 @@ namespace vkladki
    }
             };
             Label nimetus = new Label { Text = "Мэтр", FontSize = 100 };
-            Image img = new Image { Source = "makvin.jpg" };
+            Image img = new Image { Source = "metr.png" };
             Label kirjeldus = new Label { Text = "Интерьер нового Мэтара получил значительные изменения. Мэ улучшили шумоизоляцию автомобиля.В автомобиле установлен 8 дюймовый HD дисплей мультимедийной системы.В салоне установлены 4 динамика, но за доплату можно установить 8 динамиков." };
             var tap = new TapGestureRecognizer();
             tap.Tapped += async (s, e) =>
             {
                 img = (Image)s;
                 await DisplayAlert("Цена", "Базовая комплектация Comfort MT стартует от 9000 евро; средняя комплектация Luxury MT от 9500 евро; максимальный вариант Luxury CVT от 10000 евро.", "Закрыть");
+                img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap);
             grd.Children.Add(nimetus, 0, 0);

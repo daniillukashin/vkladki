@@ -36,6 +36,7 @@ namespace vkladki
             {
                 img = (Image)s;
                 await DisplayAlert("Цена", " Цена на самый быстрый гиперкар составляет 1 685 985,20 евро", "Закрыть");
+                img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap);
             grd.Children.Add(nimetus, 0, 0);

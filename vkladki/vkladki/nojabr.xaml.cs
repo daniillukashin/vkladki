@@ -29,13 +29,14 @@ namespace vkladki
    }
             };
             Label nimetus = new Label { Text = "Винтец", FontSize = 100 };
-            Image img = new Image { Source = "makvin.jpg" };
+            Image img = new Image { Source = "vint.webp" };
             Label kirjeldus = new Label { Text = "В салоне появилась новая мультимедийная система с 8,4-дюймовым дисплеем, размещенная вертикально как у Теслы. Он реагирует на жесты голос. С данного дисплея производиться регулирование всех функций суперкара. Отделка интерьера представляется собой качественную ткань и алькантару. С помощью 8,4-дюймового экрана возможно настроить освещение интерьера суперкара в зависимости от манеры езды. Также возможно вывести на экран две камеры, установленные снаружи." };
             var tap = new TapGestureRecognizer();
             tap.Tapped += async (s, e) =>
             {
                 img = (Image)s;
                 await DisplayAlert("Цена", "Цена на обновленный суперкар Винтец составит 193 551,10 евро.", "Закрыть");
+                img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap);
             grd.Children.Add(nimetus, 0, 0);

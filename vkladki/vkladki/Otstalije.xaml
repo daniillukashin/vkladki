@@ -2,13 +2,13 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:vkladki;assembly=vkladki"
-            x:Class="vkladki.MainPage">
-
+            Title="Отсталые"
+             x:Class="vkladki.Otstalije">
     <TabbedPage.Children>
-        <local:superpuper/>
-        <local:Krutie/>
-        <local:srednije/>
-        <local:Otstalije/>
+        <local:mart/>
+        <local:aprel/>
+        <local:maj/>
+
 
 
 
